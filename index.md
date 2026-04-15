@@ -1,15 +1,12 @@
 ---
 layout: project_page
 permalink: /
-
-title: JointHOI: Jointly Generating Contact Maps Enhances Hand Object Interaction Generation
-authors: Anonymous
-  
-affiliations:
+title: "JointHOI: Jointly Generating Contact Maps Enhances Hand Object Interaction Generation"
+authors: "Anonymous"
+affiliations: ""
     
-arxiv: 
-video: 
-code: 
+arxiv: ""
+code: ""
 ---
 
 <!-- Using HTML to center the abstract -->
