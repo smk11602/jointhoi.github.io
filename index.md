@@ -12,8 +12,6 @@ video:
 code: 
 ---
 
-![Turing Machine](/static/image/teaser.png)
-
 <!-- Using HTML to center the abstract -->
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
