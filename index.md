@@ -2,9 +2,9 @@
 layout: project_page
 permalink: /
 title: "JointHOI: Jointly Generating Contact Maps Enhances Hand Object Interaction Generation"
-authors: "Mingyeong Song<sup>1</sup>, Jungbin Cho<sup>2,3</sup>, Jisoo Kim<sup>2</sup>, Ananya Bal<sup>3</sup>, Kartik Sharma<sup>3</sup>, Youngjae Yu<sup>3</sup>, Laszlo A. Jeni<sup>3</sup>, Junhyug Noh<sup>1†</sup>"
+authors: "Mingyeong Song<sup>1</sup>, Jungbin Cho<sup>2,3</sup>, Jisoo Kim<sup>2</sup>, Ananya Bal<sup>3</sup>, <br> Kartik Sharma<sup>3</sup>, Youngjae Yu<sup>3</sup>, Laszlo A. Jeni<sup>3</sup>, Junhyug Noh<sup>1†</sup>"
 affiliations: "<sup>1</sup>Ewha Womans University, <sup>2</sup>Yonsei University, <sup>3</sup>Carnegie Mellon University"
-arxiv: ""
+paper: ""
 code: ""
 ---
 
@@ -33,7 +33,8 @@ To bridge this gap, we propose a framework that treats contact not as a post-pro
 
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-        <img src="static/image/main_fig.pdf" alt="Method Overview" style="width: 100%; height: auto;">
+        <object data="static/image/main_fig.pdf" type="application/pdf" style="width: 100%; height: 500px;">
+        </object>
     </div>
 </div>
 
