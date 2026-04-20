@@ -59,7 +59,7 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
 </div>
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-        <img src="static/image/main_fig.png" alt="JointHOI main figure" style="width: 100%; height: auto;">
+        <img src="static/image/main_fig_1.png" alt="JointHOI main figure" style="width: 100%; height: auto;">
         </object>
     </div>
 </div>
