@@ -25,10 +25,11 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
     </div>
 </div>
 
+
+## Method
+
 <div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
-
-    <h2>Method</h2>
 
     <div class="content has-text-justified">
       To address the limitations of prior multi-stage or implicit approaches, we propose <b>JointHOI</b>, a framework that treats contact not as a post-processing signal, but as an <i>inner modality</i> of hand–object motion.
@@ -52,21 +53,26 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
             and unstable grasps.
         </li>
     </ul>
+
     <div class="content has-text-justified">
-    This design enables physically plausible and temporally stable hand–object interactions directly from text, without requiring multi-stage pipelines or post-hoc refinement.
+      This design enables physically plausible and temporally stable hand–object interactions directly from text, without requiring multi-stage pipelines or post-hoc refinement.
     </div>
+
   </div>
-</div>
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <img src="static/image/main_fig_1.png" alt="JointHOI main figure" style="width: 100%; height: auto;">
-        </object>
-    </div>
 </div>
 
 <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+        <img src="static/image/main_fig_1.png" alt="JointHOI main figure" style="width: 100%; height: auto;">
+    </div>
+</div>
+
+---
+
+## Experiments
+
+<div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
-    <h2>Experiments</h2>
 
     <b>Quantitative Results</b>
     <img src="static/image/result_table.png" style="width:100%;">
@@ -79,10 +85,12 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
   </div>
 </div>
 
+---
+
+## Videos
+
 <div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
-
-    <h2>Videos</h2>
 
     <b>Comparison with baselines</b>
     <video controls autoplay loop muted playsinline style="width:100%;">
@@ -98,6 +106,9 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
 
   </div>
 </div>
+
+---
+
 ## Citation
 ```
 
