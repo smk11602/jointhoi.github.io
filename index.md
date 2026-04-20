@@ -48,20 +48,16 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
     <ul>
         <li>
             <b>Joint Generation.</b>
-            We introduce a single-stage diffusion model that jointly generates 3D hand–object motion
-            together with <b>dynamic, distance-based contact maps</b>.
-            By modeling motion and contact within a unified generative process,
-            the model learns explicit <i>contact–motion coupling</i> and captures
-            their spatiotemporal co-evolution.
+            <br>
+            We introduce a single-stage diffusion model that jointly generates 3D hand–object motion together with <b>dynamic, distance-based contact maps</b>.
+            By modeling motion and contact within a unified generative process, the model learns explicit <i>contact–motion coupling</i> and captures their spatiotemporal co-evolution.
         </li>
 
         <li>
             <b>Contact Inner Guidance (CIG).</b>
-            At inference time, we leverage the generated contact maps as an <i>inner guidance signal</i>
-            to steer the denoising process.
-            CIG enforces consistency between predicted contact and motion-implied geometry,
-            significantly reducing artifacts such as <b>interpenetration</b>, <b>floating</b>,
-            and unstable grasps.
+            <br>
+            At inference time, we leverage the generated contact maps as an <i>inner guidance signal</i> to steer the denoising process. 
+            CIG enforces consistency between predicted contact and motion-implied geometry, significantly reducing artifacts such as <b>interpenetration</b>, <b>floating</b>, and unstable grasps.
         </li>
     </ul>
 
@@ -79,11 +75,13 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
   <div class="column is-four-fifths">
 
     <b>Quantitative Results</b>
+    <br>
     <img src="static/image/result_table.png" style="width:100%;">
 
     <br><br>
 
     <b>Qualitative Results</b>
+    <br>
     <img src="static/image/motion_compare_vis.png" style="width:100%;">
 
   </div>
@@ -97,6 +95,7 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
   <div class="column is-four-fifths">
 
     <b>Comparison with baselines</b>
+    <br>
     <video controls autoplay loop muted playsinline style="width:100%;">
       <source src="static/video/Comparison_with_baselines.mp4" type="video/mp4">
     </video>
@@ -104,6 +103,7 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
     <br><br>
 
     <b>Additional qualitative results</b>
+    <br>
     <video controls autoplay loop muted playsinline style="width:100%;">
       <source src="static/video/Additional_qualitative_result.mp4" type="video/mp4">
     </video>
