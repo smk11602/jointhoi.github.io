@@ -26,10 +26,7 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
 </div>
 
 ## Method
-To bridge this gap, we propose a framework that treats contact not as a post-processing step, but as a core modality of the generative process.
 
-1. **Joint Generation:** Our diffusion model concurrently predicts 3D poses and **Dynamic Contact Maps** (frame-by-frame distance fields), allowing the model to learn the intrinsic relationship between hand movement and surface proximity.
-2. **Contact Inner Guidance (CIG):** During inference, we use the generated contact maps to guide the motion sampling. This ensures that the final 3D geometry strictly adheres to the predicted contact points, enforcing physical consistency.
 
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
@@ -37,14 +34,49 @@ To bridge this gap, we propose a framework that treats contact not as a post-pro
         </object>
     </div>
 </div>
+<p>
+To address the limitations of prior multi-stage or implicit approaches,
+we propose <b>JointHOI</b>, a framework that treats contact not as a post-processing signal,
+but as an <i>inner modality</i> of hand–object motion.
+</p>
+
+<ul>
+<li>
+<b>Joint Generation.</b>
+We introduce a single-stage diffusion model that jointly generates 3D hand–object motion
+together with <b>dynamic, distance-based contact maps</b>.
+By modeling motion and contact within a unified generative process,
+the model learns explicit <i>contact–motion coupling</i> and captures
+their spatiotemporal co-evolution.
+</li>
+
+<li>
+<b>Contact Inner Guidance (CIG).</b>
+At inference time, we leverage the generated contact maps as an <i>inner guidance signal</i>
+to steer the denoising process.
+CIG enforces consistency between predicted contact and motion-implied geometry,
+significantly reducing artifacts such as <b>interpenetration</b>, <b>floating</b>,
+and unstable grasps.
+</li>
+</ul>
+
+<p>
+This design enables physically plausible and temporally stable hand–object interactions
+directly from text, without requiring multi-stage pipelines or post-hoc refinement.
+</p>
+</div>
 
 
 ## Experiments
+
+<b>Quantitative Results</b>
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
         <img src="static/image/result_table.png" alt="Quantitative Results" style="width: 100%; height: auto;">
     </div>
 </div>
+
+<b>Qualitative Results</b>
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
         <img src="static/image/motion_compare_vis.png" alt="Qualitative Results" style="width: 100%; height: auto;">
