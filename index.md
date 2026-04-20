@@ -48,14 +48,12 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
     <ul>
         <li>
             <b>Joint Generation.</b>
-            <br>
             We introduce a single-stage diffusion model that jointly generates 3D hand–object motion together with <b>dynamic, distance-based contact maps</b>.
             By modeling motion and contact within a unified generative process, the model learns explicit <i>contact–motion coupling</i> and captures their spatiotemporal co-evolution.
         </li>
 
         <li>
             <b>Contact Inner Guidance (CIG).</b>
-            <br>
             At inference time, we leverage the generated contact maps as an <i>inner guidance signal</i> to steer the denoising process. 
             CIG enforces consistency between predicted contact and motion-implied geometry, significantly reducing artifacts such as <b>interpenetration</b>, <b>floating</b>, and unstable grasps.
         </li>
