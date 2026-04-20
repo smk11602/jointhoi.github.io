@@ -25,7 +25,7 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
     </div>
 </div>
 
-
+---
 ## Method
 
 <div class="columns is-centered has-text-centered">
@@ -33,6 +33,16 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
 
     <div class="content has-text-justified">
       To address the limitations of prior multi-stage or implicit approaches, we propose <b>JointHOI</b>, a framework that treats contact not as a post-processing signal, but as an <i>inner modality</i> of hand–object motion.
+    </div>
+    
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <img src="static/image/main_fig_1.png" alt="JointHOI main figure" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <div class="content has-text-justified">
+      We jointly model 3D hand–object motion and dynamic, distance-based contact maps within a unified diffusion framework.
     </div>
 
     <ul>
@@ -44,6 +54,7 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
             the model learns explicit <i>contact–motion coupling</i> and captures
             their spatiotemporal co-evolution.
         </li>
+
         <li>
             <b>Contact Inner Guidance (CIG).</b>
             At inference time, we leverage the generated contact maps as an <i>inner guidance signal</i>
@@ -60,13 +71,6 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
 
   </div>
 </div>
-
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <img src="static/image/main_fig_1.png" alt="JointHOI main figure" style="width: 100%; height: auto;">
-    </div>
-</div>
-
 ---
 
 ## Experiments
