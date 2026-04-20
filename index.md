@@ -2,8 +2,8 @@
 layout: project_page
 permalink: /
 title: "JointHOI: Jointly Generating Contact Maps Enhances Hand Object Interaction Generation"
-authors: "Mingyeong Song<sup>1</sup>, Jungbin Cho<sup>2,3</sup>, Jisoo Kim<sup>2</sup>, Ananya Bal<sup>3</sup>, <br> Kartik Sharma<sup>3</sup>, Youngjae Yu<sup>3</sup>, Laszlo A. Jeni<sup>3</sup>, Junhyug Noh<sup>1†</sup>"
-affiliations: "<sup>1</sup>Ewha Womans University, <sup>2</sup>Yonsei University, <sup>3</sup>Carnegie Mellon University"
+authors: "Mingyeong Song<sup>1</sup>, Jungbin Cho<sup>2,3</sup>, Jisoo Kim<sup>2</sup>, Ananya Bal<sup>3</sup>, <br> Kartik Sharma<sup>3</sup>, Youngjae Yu<sup>4</sup>, Laszlo A. Jeni<sup>3</sup>, Junhyug Noh<sup>1†</sup>"
+affiliations: "<sup>1</sup>Ewha Womans University, <sup>2</sup>Yonsei University, <sup>3</sup>Carnegie Mellon University, <sup>4</sup>Seoul National University"
 paper: ""
 code: ""
 ---
