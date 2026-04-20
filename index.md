@@ -25,64 +25,79 @@ Text-driven hand--object interaction (HOI) generation is gaining attention for i
     </div>
 </div>
 
-## Method
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
 
+    <h2>Method</h2>
 
+    <div class="content has-text-justified">
+      To address the limitations of prior multi-stage or implicit approaches, we propose <b>JointHOI</b>, a framework that treats contact not as a post-processing signal, but as an <i>inner modality</i> of hand–object motion.
+    </div>
+
+    <ul>
+        <li>
+            <b>Joint Generation.</b>
+            We introduce a single-stage diffusion model that jointly generates 3D hand–object motion
+            together with <b>dynamic, distance-based contact maps</b>.
+            By modeling motion and contact within a unified generative process,
+            the model learns explicit <i>contact–motion coupling</i> and captures
+            their spatiotemporal co-evolution.
+        </li>
+        <li>
+            <b>Contact Inner Guidance (CIG).</b>
+            At inference time, we leverage the generated contact maps as an <i>inner guidance signal</i>
+            to steer the denoising process.
+            CIG enforces consistency between predicted contact and motion-implied geometry,
+            significantly reducing artifacts such as <b>interpenetration</b>, <b>floating</b>,
+            and unstable grasps.
+        </li>
+    </ul>
+    <div class="content has-text-justified">
+    This design enables physically plausible and temporally stable hand–object interactions directly from text, without requiring multi-stage pipelines or post-hoc refinement.
+    </div>
+  </div>
+</div>
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-        <object data="static/image/main_fig.pdf" type="application/pdf" style="width: 100%; height: 500px;">
+        <img src="static/image/main_fig.png" alt="JointHOI main figure" style="width: 100%; height: auto;">
         </object>
     </div>
 </div>
-<p>
-To address the limitations of prior multi-stage or implicit approaches,
-we propose <b>JointHOI</b>, a framework that treats contact not as a post-processing signal,
-but as an <i>inner modality</i> of hand–object motion.
-</p>
 
-<ul>
-<li>
-<b>Joint Generation.</b>
-We introduce a single-stage diffusion model that jointly generates 3D hand–object motion
-together with <b>dynamic, distance-based contact maps</b>.
-By modeling motion and contact within a unified generative process,
-the model learns explicit <i>contact–motion coupling</i> and captures
-their spatiotemporal co-evolution.
-</li>
-
-<li>
-<b>Contact Inner Guidance (CIG).</b>
-At inference time, we leverage the generated contact maps as an <i>inner guidance signal</i>
-to steer the denoising process.
-CIG enforces consistency between predicted contact and motion-implied geometry,
-significantly reducing artifacts such as <b>interpenetration</b>, <b>floating</b>,
-and unstable grasps.
-</li>
-</ul>
-
-<p>
-This design enables physically plausible and temporally stable hand–object interactions
-directly from text, without requiring multi-stage pipelines or post-hoc refinement.
-</p>
-</div>
-
-
-## Experiments
-
-<b>Quantitative Results</b>
 <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <img src="static/image/result_table.png" alt="Quantitative Results" style="width: 100%; height: auto;">
-    </div>
+  <div class="column is-four-fifths">
+    <h2>Experiments</h2>
+
+    <b>Quantitative Results</b>
+    <img src="static/image/result_table.png" style="width:100%;">
+
+    <br><br>
+
+    <b>Qualitative Results</b>
+    <img src="static/image/motion_compare_vis.png" style="width:100%;">
+
+  </div>
 </div>
 
-<b>Qualitative Results</b>
 <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <img src="static/image/motion_compare_vis.png" alt="Qualitative Results" style="width: 100%; height: auto;">
-    </div>
-</div>
+  <div class="column is-four-fifths">
 
+    <h2>Videos</h2>
+
+    <b>Comparison with baselines</b>
+    <video controls autoplay loop muted playsinline style="width:100%;">
+      <source src="static/video/Comparison_with_baselines.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <b>Additional qualitative results</b>
+    <video controls autoplay loop muted playsinline style="width:100%;">
+      <source src="static/video/Additional_qualitative_result.mp4" type="video/mp4">
+    </video>
+
+  </div>
+</div>
 ## Citation
 ```
 
